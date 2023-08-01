@@ -164,6 +164,7 @@ footer{
 
     & .footer-col {
         margin: 20px;
+        background-color: grey;
         & ul {
             list-style: none;
             margin-left: 10px;
