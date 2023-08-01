@@ -153,8 +153,8 @@ body{
 
 
 footer{
+    background-color: rgba(215, 215, 215, 0.458);
     width: 100%;
-    background-image: grey;
 }
 #footer-container{
     display: flex;
