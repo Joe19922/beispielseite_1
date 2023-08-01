@@ -154,13 +154,14 @@ body{
 
 footer{
     width: 100%;
+    background-image: grey;
 }
 #footer-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 25px;
-    background-image: grey;
+    
     & .footer-col {
         margin: 20px;
         & ul {
