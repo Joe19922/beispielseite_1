@@ -160,10 +160,9 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 25px;
-
+    background-image: rgba(215, 215, 215, 0.458);
     & .footer-col {
         margin: 20px;
-        background-color: grey;
         & ul {
             list-style: none;
             margin-left: 10px;
