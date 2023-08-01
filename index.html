@@ -15,11 +15,11 @@
                         
                         <div class="text">
                             <div class="title">Praxis für</div>
-                            <span>Besipiel</span>
+                            <span>Beispiel</span>
                             <div class="location">Adresse</div>    
                         </div>
                     </div>
-                    <div class="sphere-container"><img src="assets/logo/surgery-logo-9.PNG" alt=""></div>
+                    <div class="sphere-container"><img src="assets/logo/surgery-logo-9.png" alt=""></div>
                 </div>
             </div>
             <div class="praxis">
@@ -95,11 +95,11 @@
             <div class="footer-col">
                 <h4>Kontakt</h4>
                 <ul>
-                    <li>Straße ...</li>
-                    <li>PlZ, Stadt ...</li>
-                    <li>Tel: 0391 ...</li>
-                    <li>Fax: 0391 ...</li>
-                    <li>E-Mail: ...</li>
+                    <li>Breiter Weg 122</li>
+                    <li>39104 Magdeburg</li>
+                    <li>Tel: <a href="tel:+493915619940">03 91 / 5 61 99 40</a></li>
+                    <li>Fax: 03 91 / 6 07 50 75</li>
+                    <li>E-Mail: <a href="www.dr-jens-rother.de">dr-jens-rother.de</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -135,6 +135,16 @@
                         <td>00:00 - 00:00 |</td>
                         <td>danach nur mit Voranmeldung</td>
                     </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td>Keine Sprechzeiten</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sonntag</td>
+                        <td>Keine Sprechzeiten</td>
+                        <td></td>
+                    </tr>
                 </table>
             </div>
             <div class="footer-col">
@@ -162,6 +172,20 @@
                 header.classList.remove("show-shadow");
             }
         });
+        	
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const currentDayOfWeek = new Date().getDay();
+            const tableRows = document.getElementsByTagName("tr");
+            const rowIndex = currentDayOfWeek; 
+
+            if (rowIndex >= 1 && rowIndex < tableRows.length) {
+                tableRows[rowIndex].style.backgroundColor = "lightblue";
+            }
+        });
+
+
+
 
     </script>
 </body>
